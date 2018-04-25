@@ -5,9 +5,6 @@ const provider = ganache.provider();
 const web3 = new Web3(provider);
 const { interface, bytecode } = require('../compile');
 
-// Silence MaxListeners Warning
-require('events').EventEmitter.prototype._maxListeners = 100;
-
 // Initial variables
 let accounts;
 let inbox;
